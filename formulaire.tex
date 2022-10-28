@@ -47,9 +47,11 @@
 \usepackage{pdfpages}
 \usepackage[smartEllipses]{markdown}
 \usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
 \usetikzlibrary{math}
 \usetikzlibrary{shapes.misc}
 \usetikzlibrary{arrows.meta,decorations.markings} % arrow and decorations
+\usepackage{schemabloc}
 %%% Custom sectioning (sectsty package)
 \usepackage{sectsty} % Custom sectioning (see below)
 \allsectionsfont{%		% Change font of al section commands
@@ -102,7 +104,7 @@
 \newcounter{mycounter}
 %%% wws: create a non-indented formula name
 \newcommand{\formdesc}[1]{\noindent\textbf{#1} \addtocounter{mycounter}{1} \hfill \themycounter}
-
+\newcommand{\formtitle}[1]{\noindent\underline{#1}}
 %%% Begin document -----------------------------------------------------------------
 \begin{document}
 \maketitle
@@ -127,38 +129,87 @@ Deux genres de régulation :
 
 \formdesc{Différence analogique/numérique}
 
-3 objectifs à la régulation : 
-\\
-\begin{tabular}{c|c}
-    Analogique & Numérique \\ \hline
-    Signaux temp u(t), y(t) & signaux temp u[k], y[k]\\ \hline
-    signaux fréq U(s), Y(s) & signaux fréq U(z), Y(z)\\ \hline
-    transformée en s&  transformée en z\\ \hline
-    équations différentielles&  équation aux différences\\ \hline
-    fonction de transfert :&fonction de transfert :\\ 
-    $G(s) = Y(s) / U(s)$& $G(z) = Y(z) / U(z)$\\ \hline
-    gain statique : G(s=0) &gain statique : G(z=1)\\ \hline
-    pôles, zéros, & pôles, zéros, \\ \hline
-    diagr. de Bode&diagr. de Bode\\ \hline
-    stabilité : $Re(s_k)$ < 0&stabilité : $|z_k| < 1$\\ 
-    (demi-plan gauche)&(int. du cercle unit.)\\ \hline
-\end{tabular}
+{\footnotesize 
+\begin{center}
+    \begin{tabular}{c|c}
+        Analogique & Numérique \\ \hline
+        Signaux temp u(t), y(t) & signaux temp u[k], y[k]\\ \hline
+        signaux fréq U(s), Y(s) & signaux fréq U(z), Y(z)\\ \hline
+        transformée en s&  transformée en z\\ \hline
+        équations différentielles&  équation aux différences\\ \hline
+        fonction de transfert :&fonction de transfert :\\ 
+        $G(s) = Y(s) / U(s)$& $G(z) = Y(z) / U(z)$\\ \hline
+        gain statique : G(s=0) &gain statique : G(z=1)\\ \hline
+        pôles, zéros, & pôles, zéros, \\ \hline
+        diagr. de Bode&diagr. de Bode\\ \hline
+        stabilité : $Re(s_k)$ < 0&stabilité : $|z_k| < 1$\\ 
+        (demi-plan gauche)&(int. du cercle unit.)\\ \hline
+    \end{tabular}
+\end{center}
+}
 \hformbar
 
 \formdesc{Régulateur Numérique}
 
-Cours 1 page 5
+\formtitle{Loi de commande }
+
+\underline{régulateur PD numérique}
+\vspace{3mm}
+
+$u[k] = u[k] + b_0 \cdot e[k]+ b_1 \cdot e[k-1]$ 
+
+avec :
+
+
+\hfill $b_0 = Kp\cdot(1+\cfrac{T_d}{T_e})$\hfill et \hfill $b_1 = -Kp \cdot \cfrac{T_d}{T_e}$ \hfill
+
+\vspace{3mm}
+
+\underline{régulateur PI numérique}
+\vspace{3mm}
+
+$u[k] = u[k] + b_0 \cdot e[k]+ b_1 \cdot e[k-1]$ 
+
 \hformbar
 
 
 \formdesc{Échantillonnage}
 
-Cours 1 page 6-8
-\hformbar
+temps d'échantillonnage, sampling h ou $T_s$ 
+
+\includegraphics[width = 0.45\textwidth]{img/echantillonage.JPG}
+\begin{center}
+    avec $y[k] = y(k \cdot h)$
+\end{center}
+
+
 
 \formdesc{Inventaire des retards}
 
-Cours 1 page 15-19
+L‘étude « quasi temps-continu » est une première approche pour 
+l’analyse et la synthèse approximative d’un système de régulation 
+numérique.
+Elle est basée sur l’inventaire des retards incontournables que 
+possède une boucle de régulation numérique.
+
+Retard du temps de calcul : $T_{cal} < \cfrac{h}{2}$
+
+Retard du bloqueur d'ordre 0 : $T_{rec} \approx \cfrac{h}{2}$
+
+\vspace{3mm}
+
+Retard des conversions :
+
+$T_{convAD} \approx T_{convAD} \approx \cfrac{h}{100} ... \cfrac{h}{10} $
+
+
+\vspace{2mm}
+
+
+\vspace{0.5cm}
+\input{Tikz/inventaire_retard.tex}
+
+
 Cours 3 page 1-6
 \hformbar
 
