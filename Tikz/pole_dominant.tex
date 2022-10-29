@@ -1,0 +1,32 @@
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+cross/.default={4pt}}
+
+\tikzset{ % this style creates an arrow like the one you draw in the middle of a path
+   ->-/.style={decoration={markings,mark=at position 0.5 with {\arrow{Straight Barb}}},
+               postaction={decorate}}
+}
+%default radius will be 1pt. 
+\begin{tikzpicture}[]
+    \tikzmath{
+    coordinate \x;
+    \x1 = (-2,0);
+    \x2 = (-1,0);
+    \x3 = (-5,0);
+    \x4 = (-3.5,0);
+    \x5 = (-1,0);
+    }
+    \draw[->] (-6,0) -- (1,0) node [anchor=west] {$R$};
+    \draw[->] (0,-0.5) -- (0,0.5) node [anchor=south] {$Img$};
+
+    \draw[thick] (\x1) node[cross] {};
+    \draw[] (\x1) node[above=0.2cm] {$S_{a2}$};
+    \draw[thick] (\x2) node[cross] {};
+    \draw[] (\x2) node[above=0.2cm] {$S_{a1}$};
+    \draw[thick] (\x4) node[cross] {};
+    \draw[] (\x4) node[above=0.2cm] {$S_{a3}$};
+
+    \draw[thick] (\x3) circle (4pt) node[above=0.2cm] {$Z_{a1} $};
+
+    \draw[thick] (\x5) circle (4pt) node[below=0.2cm] {$Z_{c1} $};
+    
+\end{tikzpicture}

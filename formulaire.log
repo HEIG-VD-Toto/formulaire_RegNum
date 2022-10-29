@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.23)  28 OCT 2022 23:58
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.4.23)  30 OCT 2022 01:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -816,8 +816,17 @@ File: pgflibraryarrows.meta.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfdecorationsegmentlength=\dimen320
 )
 \tikz@lib@dec@box=\box98
-) (c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (c:/texlive/2022/texmf-dist/tex/latex/schemabloc/schemabloc.sty
-Package: schemabloc 2006/12/29
+) (c:/texlive/2022/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrarydecorations.markings.code.tex)) (c:/texlive/2022/texmf-dist/tex/latex/blox/blox.sty
+Package: blox 2021/2/22 v2.51 Just an English translation of schemabloc
+
+* 
+blox: Just an English translation of schemabloc package.
+blox Copyright (C) 2014-2021 Ben Reish
+* 
+This program comes with ABSOLUTELY NO WARRANTY.
+This is free software, and you are welcome to redistribute it
+under certain conditions.
+* 
 ) (c:/texlive/2022/texmf-dist/tex/latex/sectsty/sectsty.sty
 Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading styles
 
@@ -841,7 +850,7 @@ Class scrartcl Warning: Incompatible package `sectsty' loaded!
 (scrartcl)              the `sectsty' maintainer for a more compatible release.
 (scrartcl)              Ignoring this warning could result in several error
 (scrartcl)              messages and formatting issues after loading package
-(scrartcl)              `sectsty' on input line 57.
+(scrartcl)              `sectsty' on input line 58.
 
 
 Class scrartcl Warning: Usage of package `fancyhdr' together
@@ -855,7 +864,7 @@ Class scrartcl Warning: Usage of package `fancyhdr' together
 (scrartcl)              `\addtokomafont' for the page style elements need
 (scrartcl)              explicite user intervention to work.
 (scrartcl)              Nevertheless, using requested
-(scrartcl)              package `fancyhdr' on input line 66.
+(scrartcl)              package `fancyhdr' on input line 67.
 
 (c:/texlive/2022/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 Package: fancyhdr 2021/01/28 v4.0.1 Extensive control of page headers and footers
@@ -916,40 +925,40 @@ Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
 ) (./formulaire.aux)
 \openout1 = `formulaire.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 109.
-LaTeX Font Info:    ... okay on input line 109.
-LaTeX Info: Redefining \degres on input line 109.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 110.
+LaTeX Font Info:    ... okay on input line 110.
+LaTeX Info: Redefining \degres on input line 110.
 Package french.ldf Info: Setting StandardItemizeEnv=true for
 (french.ldf)             compatibility with paralist package,
-(french.ldf)             reported on input line 109.
+(french.ldf)             reported on input line 110.
 Package french.ldf Info: Setting StandardEnumerateEnv=true for
 (french.ldf)             compatibility with paralist package,
-(french.ldf)             reported on input line 109.
-LaTeX Info: Redefining \up on input line 109.
-LaTeX Info: Redefining \microtypecontext on input line 109.
-Package microtype Info: Applying patch `item' on input line 109.
-Package microtype Info: Applying patch `toc' on input line 109.
-Package microtype Info: Applying patch `eqnum' on input line 109.
-Package microtype Info: Applying patch `footnote' on input line 109.
+(french.ldf)             reported on input line 110.
+LaTeX Info: Redefining \up on input line 110.
+LaTeX Info: Redefining \microtypecontext on input line 110.
+Package microtype Info: Applying patch `item' on input line 110.
+Package microtype Info: Applying patch `toc' on input line 110.
+Package microtype Info: Applying patch `eqnum' on input line 110.
+Package microtype Info: Applying patch `footnote' on input line 110.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
 Package microtype Info: Automatic font expansion enabled (level 2),
 (microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
 Package microtype Info: Using default expansion set `alltext-nott'.
-LaTeX Info: Redefining \showhyphens on input line 109.
+LaTeX Info: Redefining \showhyphens on input line 110.
 Package microtype Info: No adjustment of tracking.
 Package microtype Info: No adjustment of interword spacing.
 Package microtype Info: No adjustment of character kerning.
@@ -961,11 +970,11 @@ Package newfloat Info: `wrapfig' package detected.
 
 No file pythontex-files-formulaire/formulaire.pytxmcr.
 Run PythonTeX to create it.
-Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 109.
+Package newfloat Info: New float `listing' with options `fileext=lopytx' on input line 110.
 \c@listing=\count375
-Package newfloat Info: float type `listing'=4 on input line 109.
+Package newfloat Info: float type `listing'=4 on input line 110.
 \c@lopytxdepth=\count376
-Package tocbasic Info: setting babel extension for `lopytx' on input line 109.
+Package tocbasic Info: setting babel extension for `lopytx' on input line 110.
 (c:/texlive/2022/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count377
@@ -993,8 +1002,8 @@ Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 )
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 109.
-LaTeX Font Info:    Trying to load font information for OT1+phv on input line 110.
+(lastpage)             ! on input line 110.
+LaTeX Font Info:    Trying to load font information for OT1+phv on input line 111.
  (c:/texlive/2022/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2020/03/25 scalable font definitions for OT1/phv.
 )
@@ -1005,13 +1014,13 @@ Package microtype Info: Loading generic protrusion settings for font family
  (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 134.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 135.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 134.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 135.
  (c:/texlive/2022/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/texlive/2022/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1020,52 +1029,50 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 <img/echantillonage.JPG, id=4, 876.27374pt x 348.55219pt>
 File: img/echantillonage.JPG Graphic file (type jpg)
 <use img/echantillonage.JPG>
-Package pdftex.def Info: img/echantillonage.JPG  used on input line 180.
+Package pdftex.def Info: img/echantillonage.JPG  used on input line 181.
 (pdftex.def)             Requested size: 226.42252pt x 90.06297pt.
  (./Tikz/inventaire_retard.tex
-Overfull \hbox (15.95285pt too wide) in paragraph at lines 6--30
+Missing character: There is no ; in font nullfont!
+
+Overfull \hbox (10.9261pt too wide) in paragraph at lines 6--30
 [][] 
  []
 
 )
-Overfull \hbox (26.04115pt too wide) in paragraph at lines 50--211
-[][]
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 50--211
-
- []
-
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 254.
-(c:/texlive/2022/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
+LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 246.
+ (c:/texlive/2022/texmf-dist/tex/latex/tex-gyre/ts1qtm.fd
 File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
 ) [1{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 
- <./img/echantillonage.JPG>] (./Tikz/loi_des_poles.tex) 
+ <./img/echantillonage.JPG>] (./Tikz/pole_dominant.tex)
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+Missing character: There is no ; in font nullfont!
+[2] (./Tikz/loi_des_poles.tex) 
 AED: lastpage setting LastPage
-[2
+[3
 
 ] (./formulaire.aux) ) 
 Here is how much of TeX's memory you used:
- 32983 strings out of 478233
- 700350 string characters out of 5847836
- 1165780 words of memory out of 5000000
- 50573 multiletter control sequences out of 15000+600000
- 498275 words of font info for 88 fonts, out of 8000000 for 9000
+ 33235 strings out of 478233
+ 704462 string characters out of 5847836
+ 1182608 words of memory out of 5000000
+ 50801 multiletter control sequences out of 15000+600000
+ 512421 words of font info for 118 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 108i,12n,106p,10708b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
-{c:/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb>
-Output written on formulaire.pdf (2 pages, 281133 bytes).
+ 108i,11n,106p,10708b,914s stack positions out of 10000i,1000n,20000p,200000b,200000s
+{c:/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/tex-gyre/q-ec.enc}{c:/texlive/2022/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmb.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sftt0900.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb><c:/texlive/2022/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb>
+Output written on formulaire.pdf (3 pages, 319559 bytes).
 PDF statistics:
- 117 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 135 PDF objects out of 1000 (max. 8388607)
+ 83 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 18450 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 26130 words of extra memory for PDF output out of 29859 (max. 10000000)
 

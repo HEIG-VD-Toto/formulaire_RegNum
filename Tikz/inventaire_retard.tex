@@ -3,22 +3,22 @@
 \newcommand{\inte}{$\displaystyle \int$}
 \newcommand{\derv}{\huge$\frac{d}{dt}$}
 
-\resizebox{.5\textwidth}{!}{
+\resizebox{.49\textwidth}{!}{
     \begin{tikzpicture}
         \begin{small} 
-            \sbEntree{E}
-            \sbBloc[4]{algo}{Algo.}{E}
-            \sbRelier[$w(k)$]{E}{algo}
-            \sbBloc[4]{conv1}{D/A}{algo}
-            \sbRelier[$u(k)$]{algo}{conv1}
-            \sbBloc[4]{sys}{Sys.regl.}{conv1}
-            \sbRelier[$u(t)$]{conv1}{sys}
-            \sbSortie[4]{S}{sys}
-            \sbRelier[$y(t)$]{sys}{S}
-            \sbDecaleNoeudy[4]{S}{U}
-            \sbBlocr[12.1]{conv2}{A/D}{U}
-            \sbRelieryx{sys-S}{conv2}
-            \sbRelierxy[$y(k)$]{conv2}{algo}      
+            \bXInput{E}
+            \bXBloc[4]{algo}{Algo.}{E}
+            \bXLink[$w(k)$]{E}{algo}
+            \bXBloc[4]{conv1}{D/A}{algo}
+            \bXLink[$u(k)$]{algo}{conv1}
+            \bXBloc[4]{sys}{Sys.regl.}{conv1}
+            \bXLink[$u(t)$]{conv1}{sys}
+            \bXOutput[4]{S}{sys}
+            \bXLink[$y(t)$]{sys}{S}
+            \bXBranchy[4]{S}{U}
+            \bXBlocr[12.1]{conv2}{A/D}{U}
+            \bXLinkyx{sys-S}{conv2}
+            \bXLinkxy[$y(k)$]{conv2}{algo}      
         \node[draw] at (4.8,-2.5) { Retard total : $T_r  =  T_{cal} + T_{convAD} + T_{convAD} + T_{rec} \approx h $};   
         \draw [-latex,red,thick] (3.5,-2.3) to [out=90,in=330] (algo);
         \draw [-latex,blue,thick] (5.3,-2.3) to [out=90,in=320] (conv2);
@@ -28,23 +28,3 @@
     \end{tikzpicture}
 }
 
-\vspace{3mm}
-
-Ce qui est approximable avec un retard pur par : 
-
-\vspace{3mm}
-
-\begin{tikzpicture}
-    \begin{small} 
-            \sbEntree{E}
-            \sbBloc[4]{algo}{$G_c(S)$}{E}
-            \sbRelier[$w(k)$]{E}{algo}
-            \sbBloc[4]{conv1}{$e^{-sh}$}{algo}
-            \sbRelier[$u(k)$]{algo}{conv1}
-            \sbBloc[4]{sys}{$G_a(S)$}{conv1}
-            \sbRelier[$u(t)$]{conv1}{sys}
-            \sbSortie[4]{S}{sys}
-            \sbRelier[$y(t)$]{sys}{S}
-            \sbRenvoi{sys-S}{algo}{}
-    \end{small}
-\end{tikzpicture}

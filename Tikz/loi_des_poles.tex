@@ -6,25 +6,25 @@ cross/.default={4pt}}
                postaction={decorate}}
 }
 %default radius will be 1pt. 
-\begin{tikzpicture}
+\begin{tikzpicture}[]
     \tikzmath{
     coordinate \x;
     \x1=(-2,0);
     \x2=(0,0);
-    \x3=(-3,0);
-    \x4 = (-5,0);
+    \x3=(-2.5,0);
+    \x4 = (-3,0);
     \x5 = (-1,0);
     }
     
-    \draw[help lines] (-5.5,-2.5) grid (0.5,2.5);
+    \draw[help lines,dashed] (-5.5,-1.5) grid (0.5,1.5);
     \draw[->] (-6,0) -- (1,0) node [anchor=west] {$R$};
-    \draw[->] (0,-2.5) -- (0,2.5) node [anchor=south] {$Img$};
+    \draw[->] (0,-1.5) -- (0,1.5) node [anchor=south] {$Img$};
     \draw[->-,red,thick] (\x1) -- (\x5);
-    \draw[->-,red,thick] (\x5) arc (0:180:2);
+    \draw[->-,red,thick] (\x5) arc (0:180:1);
     \draw[->-,red,thick] (\x4) -- (\x3);
     
     \draw[->-,blue,thick] (\x2) -- (\x5);
-    \draw[->-,blue,thick] (\x5) arc (0:-180:2);
+    \draw[->-,blue,thick] (\x5) arc (0:-180:1);
     \draw[->-,blue,thick] (\x4) -- (-6,0);
     \draw (\x1) node[cross] {};
     \draw (\x2) node[cross] {};
