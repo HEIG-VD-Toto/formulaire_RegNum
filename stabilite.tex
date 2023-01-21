@@ -19,6 +19,8 @@ $A_{m,dB} = -|G_o(j\omega_{\pi})| $\quad  [dB]
 
 \vspace{3mm}
 
+$\omega_{co} \cdot T_{reg} = \pi$
+
 \formtitle{Liens entre la boucle ouverte et la boucle fermée} 
 
 bande passante à -3 dB en boucle fermée $\omega_{bp} \approx$ pulsation de coupure en boucle ouverte $\omega_{co}$
@@ -47,6 +49,9 @@ Pulsation de coupure en b.o. $\omega_{co} \Leftrightarrow $ rapidité en b.f
 
 {\noindent$G_c(s) = K_p \cfrac{1+T_i \cdot s}{T_i \cdot s} \rightarrow$}
 
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+cross/.default={4pt}}
+
 \begin{wrapfigure}[2]{r}{0.25\textwidth}
     \begin{center}
         \vspace{-3.7cm}
@@ -54,10 +59,12 @@ Pulsation de coupure en b.o. $\omega_{co} \Leftrightarrow $ rapidité en b.f
             \tikzmath{
             coordinate \x;
             \x1 = (-1.5,0);
+            \x2 = (0,0);
             }
             \draw[->] (-2,0) -- (1,0) node [anchor=west] {$R$};
             \draw[->] (0,-0.5) -- (0,0.5) node [anchor=south] {$Img$};
             \draw[thick] (\x1) circle (4pt) node[above=0.2cm] {$Z = -\cfrac{1}{T_i}$};
+            \draw[thick] (\x2) node[cross] {};
         \end{tikzpicture}
     \end{center}
   \end{wrapfigure}
@@ -99,8 +106,6 @@ Pulsation de coupure en b.o. $\omega_{co} \Leftrightarrow $ rapidité en b.f
 zéros réels si : $T_i > 4\cdot T_d$
 
     \begin{center}
-        \tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
-        cross/.default={4pt}}
         \begin{tikzpicture}[]
             \tikzmath{
             coordinate \x;
@@ -167,7 +172,7 @@ zéros réels si : $T_i > 4\cdot T_d$
             \node at (E-retard)[circle,fill,inner sep=1pt,below=0.225cm]{};
         \end{small}
     \end{tikzpicture}
-    $G_d(Z) = (1-z^{-1}) \cdot \cfrac{1}{h} = \cfrac{Z-1}{hZ}$
+    $G_d(Z) = (1-z^{-1}) \cdot \cfrac{1}{h} = \cfrac{z-1}{h\;z}$
 \end{center}
 
 \hformbar
@@ -211,10 +216,8 @@ zéros réels si : $T_i > 4\cdot T_d$
             \node at (ret-S)[circle,fill,inner sep=1pt,below=0.225cm]{};
         \end{small}
     \end{tikzpicture}
-    $G_i(Z) = \cfrac{h \cdot z^{-1}}{1 - z^{-1}}= \cfrac{h}{Z-1}$
+    $G_i(Z) = \cfrac{h \cdot z^{-1}}{1 - z^{-1}}= \cfrac{h}{z-1}$
 \end{center}
-
-\hformbar
 
 \newpage
 
@@ -231,8 +234,12 @@ $y[k] = y[k-1] + h \cdot \cfrac{u[k-1]+u[k]}{2}$
 
 \vspace{3mm}
 
-$G_i(Z) = \cfrac{h \cdot (z^{-1}+1)}{2(1 - z^{-1})} \approx \cfrac{1}{S}$
+$G_i(Z) = \cfrac{h \cdot (z^{-1}+1)}{2(1 - z^{-1})} \approx \cfrac{1}{s}$
 
 
-$G_d(Z) = \cfrac{2(1 - z^{-1})}{h \cdot (z^{-1}+1)} \approx S$
+$G_d(Z) = \cfrac{2(1 - z^{-1})}{h \cdot (z^{-1}+1)} \approx s$
+
+l'idée de la methode de tustin est de remplacer s par l'expression en z
+
+{\footnotesize $G(s) = \cfrac{1}{1+ \tau s} = \cfrac{1}{1+ \tau \cfrac{2(1 - z^{-1})}{h \cdot (z^{-1}+1)}} = \cfrac{hz + h}{(h+2\tau)z + h -2\tau}$}
 

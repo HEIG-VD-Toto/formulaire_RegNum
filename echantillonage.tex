@@ -29,11 +29,15 @@ $u[k] = u[k] + b_0 \cdot e[k]+ b_1 \cdot e[k-1]$
 
 temps d'échantillonnage, sampling h ou $T_s$ 
 
-\includegraphics[width = 0.45\textwidth]{img/echantillonage.JPG}
 \begin{center}
+    \includegraphics[width = 0.35\textwidth]{img/echantillonage.JPG}
     avec $y[k] = y(k \cdot h)$
 \end{center}
 
+
+Il doit être choisi afin d'éviter les variations trop brutales.
+
+$ h = T_{reg}/20 \; ... \; T_{reg}/10$
 
 
 \formdesc{Inventaire des retards}
