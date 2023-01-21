@@ -1,0 +1,36 @@
+
+\hformbar
+\formdesc{Lieu des poles(Root locus)}
+
+\footnotesize Outil important permettant la synthèse de systèmes réglés : 
+\begin{enumerate}
+ \item choix de Kp
+\end{enumerate}
+
+pôles complexes conjugués :
+
+{\hfill $s_{1,2} = -\delta \pm j\omega $\hfill}
+
+Réponse indicielle :
+
+{\hfill $g(t) = e^{-\delta \cdot t} \cdot sin(\omega t) $\hfill}
+
+Rappel (formulaire régulation automatique) : 
+
+{\hfill $T_{reg} = \cfrac{3}{\delta} = \cfrac{-3}{\mathbb{R}(s_f)}$\hfill}\vspace{3mm}
+
+Règles de tracer du lieu des pôles (L.d.P) :
+\begin{enumerate}
+    \item L.d.P a n branches = degré du dénominateur 
+    \item L.d.P a M branches = degré du numérateur
+    \item L.d.P symétrique par l'axe $\mathbb{R}$
+    \item Points de départ à $K_p = 0$
+    \item Points de fin à $K_p = \infty$
+    \item $d = n-m$ branches restante partent en asymptote infinie, où d correspond au degré relatif de la B.O\\ les asymptotes forment des étoiles régulières
+    \item Tout point de l'axe réel situé à gauche d'un nombre impair de pôles et de zéros réels fait partie du lieu
+\end{enumerate}
+
+\input{Tikz/loi_des_poles.tex}
+
+\hformbar
+

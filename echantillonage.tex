@@ -1,0 +1,94 @@
+
+\hformbar
+
+\formdesc{Régulateur Numérique}
+
+\formtitle{Loi de commande }
+
+\underline{régulateur PD numérique}
+\vspace{3mm}
+
+$u[k] = u[k] + b_0 \cdot e[k]+ b_1 \cdot e[k-1]$ 
+
+avec :
+
+
+\hfill $b_0 = Kp\cdot(1+\cfrac{T_d}{T_e})$\hfill et \hfill $b_1 = -Kp \cdot \cfrac{T_d}{T_e}$ \hfill
+
+\vspace{3mm}
+
+\underline{régulateur PI numérique}
+\vspace{3mm}
+
+$u[k] = u[k] + b_0 \cdot e[k]+ b_1 \cdot e[k-1]$ 
+
+\hformbar
+
+
+\formdesc{Échantillonnage}
+
+temps d'échantillonnage, sampling h ou $T_s$ 
+
+\includegraphics[width = 0.45\textwidth]{img/echantillonage.JPG}
+\begin{center}
+    avec $y[k] = y(k \cdot h)$
+\end{center}
+
+
+
+\formdesc{Inventaire des retards}
+
+L‘étude « quasi temps-continu » est une première approche pour 
+l’analyse et la synthèse approximative d’un système de régulation 
+numérique.
+Elle est basée sur l’inventaire des retards incontournables que 
+possède une boucle de régulation numérique.
+
+Retard du temps de calcul : $T_{cal} < \cfrac{h}{2}$
+
+Retard du bloqueur d'ordre 0 : $T_{rec} \approx \cfrac{h}{2}$
+
+\vspace{3mm}
+
+Retard des conversions :
+
+$T_{convAD} \approx T_{convAD} \approx \cfrac{h}{100} ... \cfrac{h}{10} $
+
+
+\vspace{2mm}
+
+
+\vspace{0.5cm}
+\input{Tikz/inventaire_retard.tex}
+
+\vspace{3mm}
+
+Ce qui est approximable avec un retard pur par : 
+
+\vspace{3mm}
+
+\underline{Approximations du retard}
+
+\begin{enumerate}
+    \item Retard analogique (régime harmonique) :
+    
+        $e^{-j \omega T_r} = e^{j\varphi}$ avec $\varphi = - \omega T_r$
+
+        $|e^{-j\omega T_r}| = 1$
+
+        $arg(e^{-j\omega T_r}) = -T_r \cdot \omega$
+
+    \item diagramme de Bode du retard analogique exact : 
+        \begin{enumerate}
+            \item système d'ordre 1 : 
+            
+                $e^{-j\omega T_r}  \approx \cfrac{1}{1+T_r\cdot j\omega}$
+
+            \item Padé : 
+                
+                $e^{-j\omega T_r}  \approx \cfrac{1-\cfrac{T_r}{2}j\omega}{1+\cfrac{T_r}{2}j\omega}$
+
+            Exact pour le module (1), mais pas pour la phase !
+
+        \end{enumerate}
+\end{enumerate}
