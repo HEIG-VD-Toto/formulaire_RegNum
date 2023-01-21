@@ -1,0 +1,36 @@
+\formdesc{Concept}
+
+3 objectif à la régulation : 
+\begin{enumerate}
+    \item Stable
+    \item Rapide 
+    \item Bien amorti
+\end{enumerate}
+
+Deux genres de régulation :
+\begin{enumerate}
+    \item Correspondance : signal y(t) suit la consigne w(t)
+    \item maintien : signal y(t) devrait ne pas ou peu être influencé par les perturbations v(t)
+\end{enumerate}
+\hformbar
+
+\formdesc{Différence analogique/numérique}
+
+{\footnotesize 
+\begin{center}
+    \begin{tabular}{c|c}
+        Analogique & Numérique \\ \hline
+        Signaux temp u(t), y(t) & signaux temp u[k], y[k]\\ \hline
+        signaux fréq U(s), Y(s) & signaux fréq U(z), Y(z)\\ \hline
+        transformée en s&  transformée en z\\ \hline
+        équations différentielles&  équation aux différences\\ \hline
+        fonction de transfert :&fonction de transfert :\\ 
+        $G(s) = Y(s) / U(s)$& $G(z) = Y(z) / U(z)$\\ \hline
+        gain statique : G(s=0) &gain statique : G(z=1)\\ \hline
+        pôles, zéros, & pôles, zéros, \\ \hline
+        diagr. de Bode&diagr. de Bode\\ \hline
+        stabilité : $Re(s_k)$ < 0&stabilité : $|z_k| < 1$\\ 
+        (demi-plan gauche)&(int. du cercle unit.)\\ \hline
+    \end{tabular}
+\end{center}
+}
