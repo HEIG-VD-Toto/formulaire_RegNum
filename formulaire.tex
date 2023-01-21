@@ -162,7 +162,7 @@ $u[k] = u[k] + b_0 \cdot e[k]+ b_1 \cdot e[k-1]$
 avec :
 
 
-\hfill $b_0 = Kp\cdot(1+\cfrac{T_d}{T_e})$\hfill et \hfill $b_1 = -Kp \cdot \cfrac{T_d}{T_e}$ \hfill
+\hfill $b_0 = Kp\cdot\bigg(1+\cfrac{T_d}{T_e}\bigg)$\hfill et \hfill $b_1 = -Kp \cdot \cfrac{T_d}{T_e}$ \hfill
 
 \vspace{3mm}
 
@@ -177,11 +177,14 @@ $u[k] = u[k] + b_0 \cdot e[k]+ b_1 \cdot e[k-1]$
 \formdesc{Échantillonnage}
 
 temps d'échantillonnage, sampling h ou $T_s$ 
-
-\includegraphics[width = 0.45\textwidth]{img/echantillonage.JPG}
 \begin{center}
+    \includegraphics[width = 0.35\textwidth]{img/echantillonage.JPG}
     avec $y[k] = y(k \cdot h)$
 \end{center}
+
+Il doit être choisi afin d'éviter les variations trop brutales.
+
+$ h = T_{reg}/20 \; ... \; T_{reg}/10$
 
 
 
@@ -260,6 +263,9 @@ $\varphi_m = arg(G_o(j\omega_{co}))- (-\pi)$ \quad [rad]
 $A_{m,dB} = -|G_o(j\omega_{\pi})| $\quad  [dB]
 
 \vspace{3mm}
+$\omega_{co} \cdot T_{reg} = \pi$
+
+\vspace{3mm}
 
 \formtitle{Liens entre la boucle ouverte et la boucle fermée} 
 
@@ -289,6 +295,8 @@ Pulsation de coupure en b.o. $\omega_{co} \Leftrightarrow $ rapidité en b.f
 
 {\noindent$G_c(s) = K_p \cfrac{1+T_i \cdot s}{T_i \cdot s} \rightarrow$}
 
+\tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
+cross/.default={4pt}}
 \begin{wrapfigure}[2]{r}{0.25\textwidth}
     \begin{center}
         \vspace{-3.7cm}
@@ -296,10 +304,12 @@ Pulsation de coupure en b.o. $\omega_{co} \Leftrightarrow $ rapidité en b.f
             \tikzmath{
             coordinate \x;
             \x1 = (-1.5,0);
+            \x2 = (0,0);
             }
             \draw[->] (-2,0) -- (1,0) node [anchor=west] {$R$};
             \draw[->] (0,-0.5) -- (0,0.5) node [anchor=south] {$Img$};
             \draw[thick] (\x1) circle (4pt) node[above=0.2cm] {$Z = -\cfrac{1}{T_i}$};
+            \draw[thick] (\x2) node[cross] {};
         \end{tikzpicture}
     \end{center}
   \end{wrapfigure}
@@ -341,8 +351,6 @@ Pulsation de coupure en b.o. $\omega_{co} \Leftrightarrow $ rapidité en b.f
 zéros réels si : $T_i > 4\cdot T_d$
 
     \begin{center}
-        \tikzset{cross/.style={cross out, draw=black, minimum size=2*(#1-\pgflinewidth), inner sep=0pt, outer sep=0pt},
-        cross/.default={4pt}}
         \begin{tikzpicture}[]
             \tikzmath{
             coordinate \x;
@@ -472,21 +480,21 @@ $y[k] = y[k-1] + h \cdot \cfrac{u[k-1]+u[k]}{2}$
 
 \vspace{3mm}
 
-$G_i(Z) = \cfrac{h \cdot (z^{-1}+1)}{2(1 - z^{-1})} \approx \cfrac{1}{S}$
+$G_i(Z) = \cfrac{h \cdot (z^{-1}+1)}{2(1 - z^{-1})} \approx \cfrac{1}{s}$
 
 
-$G_d(Z) = \cfrac{2(1 - z^{-1})}{h \cdot (z^{-1}+1)} \approx S$
+$G_d(Z) = \cfrac{2(1 - z^{-1})}{h \cdot (z^{-1}+1)} \approx s$
 
+l'idée de la methode de tustin est de remplacer s par l'expression en z
+
+{\footnotesize $G(s) = \cfrac{1}{1+ \tau s} = \cfrac{1}{1+ \tau \cfrac{2(1 - z^{-1})}{h \cdot (z^{-1}+1)}} = \cfrac{hz + h}{(h+2\tau)z + h -2\tau}$}
 \hformbar
 
 \newpage
 
 \formdesc{Lieu des poles(Root locus)}
 
-\footnotesize Outil important permettant la synthèse de systèmes réglés : 
-\begin{enumerate}
- \item choix de Kp
-\end{enumerate}
+{\footnotesize Outil important permettant la synthèse de systèmes réglés.
 
 pôles complexes conjugués :
 
@@ -504,13 +512,13 @@ Règles de tracer du lieu des pôles (L.d.P) :
 \begin{enumerate}
     \item L.d.P a n branches = degré du dénominateur 
     \item L.d.P a M branches = degré du numérateur
-    \item L.d.P symétrique par l'axe $\mathbb{R}$
+    \item L.d.P symétrique par l'axe $\mathbb{R} (x)$
     \item Points de départ à $K_p = 0$
     \item Points de fin à $K_p = \infty$
     \item $d = n-m$ branches restante partent en asymptote infinie, où d correspond au degré relatif de la B.O\\ les asymptotes forment des étoiles régulières
     \item Tout point de l'axe réel situé à gauche d'un nombre impair de pôles et de zéros réels fait partie du lieu
 \end{enumerate}
-
+}
 \input{Tikz/loi_des_poles.tex}
 
 \hformbar
